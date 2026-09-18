@@ -132,6 +132,7 @@ payment_id VARCHAR(25),
 invoice_id VARCHAR(25),
 student_id VARCHAR(25),
 payment_date DATE,
-amount_paid INT
+amount_paid INT,
+payment_mode VARCHAR(20)
 );
 
