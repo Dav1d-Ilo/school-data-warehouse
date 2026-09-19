@@ -87,8 +87,8 @@ employment_id VARCHAR(15),
 employee_id VARCHAR(15),
 department VARCHAR(30),
 job_title VARCHAR(30),
-employment_date DATE,
-end_date  DATE,
+employment_date VARCHAR(30),
+end_date  VARCHAR(30),
 employment_status VARCHAR(30)
 );
 
