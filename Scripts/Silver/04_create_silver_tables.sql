@@ -23,7 +23,7 @@ date_of_birth DATE,
 gender VARCHAR(10),
 guardian_name NVARCHAR(30),
 guardian_phone VARCHAR(20),
-adress NVARCHAR(50)
+home_address NVARCHAR(50)
 );
 
 IF OBJECT_ID ('Silver.academics_subjects' , 'U') IS NOT NULL
@@ -65,7 +65,7 @@ date_of_birth DATE,
 gender VARCHAR(10),
 phone VARCHAR(15),
 email VARCHAR(50),
-adress NVARCHAR(50)
+home_address NVARCHAR(50)
 );
 
 IF OBJECT_ID ('Silver.hr_employment' , 'U') IS NOT NULL
