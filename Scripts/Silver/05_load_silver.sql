@@ -1,3 +1,21 @@
+CREATE OR ALTER PROCEDURE Silver.load_silver AS
+BEGIN
+    DECLARE @start_time DATETIME2;
+    DECLARE @end_time DATETIME2;
+
+    BEGIN TRY
+
+        SET @start_time = SYSDATETIME();
+
+        PRINT 'Loading Silver Layer';
+        PRINT '=====================';
+        PRINT 'Start Time: ' + CONVERT(VARCHAR, @start_time, 120);
+
+        PRINT '------------------------';
+        PRINT 'Loading ACADEMICS Tables';
+        PRINT '------------------------';
+
+
 TRUNCATE TABLE Silver.academics_enrollment;
 PRINT '>>Inserting enrollment data'
 INSERT INTO Silver.academics_enrollment
@@ -113,6 +131,10 @@ SELECT
 FROM Bronze.academics_subjects;
 
 
+        PRINT '------------------------';
+        PRINT 'Loading FINANCE Tables';
+        PRINT '------------------------';
+
 TRUNCATE TABLE Silver.finance_fee
 PRINT 'Inserting Fee Data'
 INSERT INTO Silver.finance_fee
@@ -198,6 +220,9 @@ SELECT
     END AS payment_mode
 FROM Bronze.finance_payment;
 
+        PRINT '------------------------';
+        PRINT 'Loading HR Tables';
+        PRINT '------------------------';
 
 TRUNCATE TABLE Silver.hr_employee
 PRINT 'Inserting Employee Data'
@@ -290,3 +315,36 @@ SELECT
         ELSE NULL
     END AS term
 FROM Bronze.hr_teacher_assignment;
+
+   SET @end_time = SYSDATETIME();
+
+        PRINT '================================================';
+        PRINT 'Silver Layer Load Completed';
+        PRINT 'End Time: ' + CONVERT(VARCHAR, @end_time, 120);
+        PRINT 'Duration: '
+            + CAST(DATEDIFF(SECOND, @start_time, @end_time) AS VARCHAR(20))
+            + ' seconds';
+        PRINT '================================================';
+
+    END TRY
+
+    BEGIN CATCH
+
+        SET @end_time = SYSDATETIME();
+
+        PRINT '============================================';
+        PRINT 'ERROR OCCURRED DURING SILVER LOAD';
+        PRINT '============================================';
+
+        PRINT 'Error Message: ' + ERROR_MESSAGE();
+        PRINT 'Error Number: ' + CAST(ERROR_NUMBER() AS VARCHAR(10));
+        PRINT 'Error Line: ' + CAST(ERROR_LINE() AS VARCHAR(10));
+
+        PRINT 'Duration Before Failure: '
+            + CAST(DATEDIFF(SECOND, @start_time, @end_time) AS VARCHAR(20))
+            + ' seconds';
+
+        THROW;
+
+    END CATCH
+END;
