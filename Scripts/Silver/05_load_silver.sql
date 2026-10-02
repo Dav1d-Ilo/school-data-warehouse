@@ -113,7 +113,7 @@ SELECT
     END AS gender,
     TRIM(guardian_name) AS guardian_name,
     TRIM(guardian_phone) AS guardian_phone,
-    TRIM(home_address) AS home_address
+    TRIM('"' FROM TRIM(home_address)) AS home_address
 FROM Bronze.academics_student_info;
 
 TRUNCATE TABLE Silver.academics_subjects;
