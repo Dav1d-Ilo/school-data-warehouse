@@ -1,0 +1,49 @@
+employee_id,first_name,last_name,date_of_birth,gender,phone,email,home_address
+EMP1171, David ,Adebayo,1975-08-28,M,08037599590,david.adebayo65@school.com,   Mushin, Lagos  
+EMP2583,Femi,Eze,1988-02-27,M,08011415961,femi.eze66@school.com,  Maryland, Lagos  
+EMP2464,Ngozi,Ibrahim,1989-05-23,F,08042726119,ngozi.ibrahim92@school.com,  Gbagada, Lagos  
+EMP6383,Chioma,Adebayo,1977-02-10,F,08014603551,chioma.adebayo52@school.com,  Surulere, Lagos  
+EMP1916,Kunle,Ogunleye ,1996-07-14,M,08042855032,kunle.ogunleye99@school.com,  Agege, Lagos  
+EMP5742,Uche,Balogun,1976-08-14,M,08080670371,uche.balogun30@school.com,  Agege, Lagos  
+EMP9548, Ifeoma ,Bello,1989-03-21,f, 08023637167 ,ifeoma.bello24@school.com,  Ojodu, Lagos  
+EMP8199,Tunde,Okafor ,1972-04-14,M,08033980371,tunde.okafor19@school.com,   Maryland, Lagos  
+EMP4665,Mary,Okafor,1985-12-16,F,08015487161,mary.okafor12@school.com,   Ikeja, Lagos  
+EMP6145,Esther,Adeyemi,1972-07-23,F,08083105155,esther.adeyemi13@school.com,  Gbagada, Lagos  
+EMP8764,David,Ezeh,1995-02-18,M,08027612845,david.ezeh53@school.com,  Ogba, Lagos  
+EMP2395,Ruth,Ogunleye,1984-02-14,F,08032690091,ruth.ogunleye21@school.com,  Ikeja, Lagos  
+EMP1238,Samuel,Okoro,1993-11-03,M,08067536062,samuel.okoro40@school.com,  Ojodu, Lagos  
+EMP3207,Ifeoma,Onyeka,1982-02-11,F,08079013827,ifeoma.onyeka13@school.com,  Ogba, Lagos  
+EMP4783, Grace ,Ezeh,1984-10-23,f,08037861961,grace.ezeh66@school.com,  Yaba, Lagos  
+EMP8735, Funmi ,Umeh,1990-08-13,F,08063931066,funmi.umeh16@school.com,  Ikeja, Lagos  
+EMP7277,Esther,Umeh,1982-11-10,F,08040204000,esther.umeh33@school.com,  Mushin, Lagos  
+EMP6149,Kunle,Ibrahim,1988-10-07,M,08015243187,kunle.ibrahim12@school.com,  Ikeja, Lagos  
+EMP3518,Ikenna,Adebayo,1976-04-19,M,08066095862,ikenna.adebayo22@school.com,  Yaba, Lagos  
+EMP7751,Mary,Okafor,1980-03-01,f,08097148627,mary.okafor14@school.com,  Ojodu, Lagos  
+EMP8098,Joy,Balogun ,1986-07-18,F,08053447942,joy.balogun68@school.com,  Maryland, Lagos  
+EMP1769,Adaeze,Nwachukwu,1979-06-06,F,08039336354,adaeze.nwachukwu79@school.com,  Ogba, Lagos  
+EMP9709,Chioma,Obi,1992-04-09,F,08043932994,chioma.obi60@school.com,  Ikeja, Lagos  
+EMP6303, Amaka ,Ogunleye,1973-06-06,F,08093682398,amaka.ogunleye73@school.com,  Surulere, Lagos  
+EMP3579,Chioma,Okoro,1979-08-22,F, 08080120773 ,chioma.okoro11@school.com,  Agege, Lagos  
+EMP1162,Chinedu,Musa,1982-06-14,M, 08019134821 ,chinedu.musa37@school.com,  Agege, Lagos  
+EMP7954,Ruth,Ibrahim,1987-04-04,F,08016292412,ruth.ibrahim86@school.com,  Surulere, Lagos  
+EMP5169,Funmi,Ogunleye,1983-08-23,F,08074768582,funmi.ogunleye97@school.com,  Ikeja, Lagos  
+EMP5316,Ngozi,Olawale,1984-05-21,F,08079631007,ngozi.olawale33@school.com,   Mushin, Lagos  
+EMP3203,Musa,Bello ,1976-04-13,M,08047565184,musa.bello53@school.com,  Agege, Lagos  
+EMP6968,Nnamdi,Ezeh,1991-02-27,M, 08098465629 ,nnamdi.ezeh46@school.com,  Surulere, Lagos  
+EMP8261,Uche,Nwachukwu,1972-08-24,M, 08074994471 ,uche.nwachukwu87@school.com,  Agege, Lagos  
+EMP7298,Nnamdi,Yusuf ,1974-05-11,M,08027334708,nnamdi.yusuf37@school.com,  Ogba, Lagos  
+EMP2776,Chinedu,Onyeka,1973-01-21,M,08090586005,chinedu.onyeka68@school.com,  Ogba, Lagos  
+EMP8002,Nnamdi,Ezeh,1985-11-05,M,08079917989,nnamdi.ezeh87@school.com,  Ikeja, Lagos  
+EMP3077,Funmi,Ezeh,1983-02-13,F,08065260869,funmi.ezeh75@school.com,  Ogba, Lagos  
+EMP3183,Ngozi,Eze,1987-04-26,F,08087158404,ngozi.eze78@school.com,  Maryland, Lagos  
+EMP6783,David,Umeh,1990-03-21,M,08099530026,david.umeh90@school.com,  Ikeja, Lagos  
+EMP3425,Emeka,Musa,1979-05-02,M,08079687851,emeka.musa25@school.com,  Maryland, Lagos  
+EMP3018, Ngozi ,Onyeka,1981-01-16,f,08039745934,ngozi.onyeka95@school.com,  Yaba, Lagos  
+EMP2871, Blessing ,Bello,1977-02-24,F,08074883574,blessing.bello63@school.com,  Surulere, Lagos  
+EMP7932,Samuel,Okoro,1989-01-04,M,08015069807,samuel.okoro74@school.com,  Surulere, Lagos  
+EMP3367, Funmi ,Ezeh,1981-11-14,F,08093080215,funmi.ezeh98@school.com,  Surulere, Lagos  
+EMP9164,Joy,Balogun,1991-06-06,F,08085134060,joy.balogun86@school.com,  Ogba, Lagos  
+EMP3291,Obinna,Nwosu,1983-01-22,M,08045959137,obinna.nwosu23@school.com,  Surulere, Lagos  
+EMP5032,Samuel,Nwosu ,1989-11-22,M,08077420077,samuel.nwosu42@school.com,  Agege, Lagos  
+EMP1925,Kunle,Yusuf,1976-01-11,M,08093781479,kunle.yusuf71@school.com,  Surulere, Lagos  
+EMP5839,Ngozi,Eze,1982-11-07,F,08070768783,ngozi.eze53@school.com,  Surulere, Lagos  

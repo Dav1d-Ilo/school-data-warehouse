@@ -1,0 +1,49 @@
+employment_id,employee_id,department,job_title,start_date,end_date,status
+EMPLOY0001,EMP1171,Administration,Principal,2019-08-19,,Active
+EMPLOY0011,EMP8764,Academics ,Teacher,2019-09-02,,Active
+EMPLOY0002,EMP2583,Administration,Vice Principal,2020-01-13,,Active
+EMPLOY0025,EMP3579,Academics ,Teacher,2020-01-13,,Active
+EMPLOY0008,EMP8199,Academics ,Teacher,2020-01-13,,Active
+EMPLOY0016,EMP8735,Academics ,Teacher,2020-01-13,,Active
+EMPLOY0013,EMP1238,Academics ,Teacher,2020-09-07,2024-12-13,Left
+EMPLOY0022,EMP1769,Academics ,Teacher,2020-09-07,,Active
+EMPLOY0019,EMP3518,Academics ,Teacher,2020-09-07,,Active
+EMPLOY0028,EMP5169,Academics ,Teacher,2020-09-07,2024-06-28,Left
+EMPLOY0004,EMP6383,academics ,Teacher,2020-09-07,,Active
+EMPLOY0031,EMP6968,Academics ,Teacher,2020-09-07,,Active
+EMPLOY0003, EMP2464,Academics ,Teacher,2021-09-06,,Active
+EMPLOY0018, EMP6149,Academics ,Teacher,2021-09-06,2025-07-25,Left
+EMPLOY0030 ,EMP3203,Academics ,Teacher,2021-09-06,,Active
+EMPLOY0015,EMP4783,academics ,Teacher,2021-09-06,,Active
+EMPLOY0006,EMP5742,Academics ,Teacher,2021-09-06,30/08/2024,Left
+EMPLOY0010,EMP6145,Academics ,Teacher,06/09/2021,,Active
+EMPLOY0024,EMP6303,Academics ,Teacher,2021-09-06,,Active
+EMPLOY0027,EMP7954,Academics ,Teacher,2021-09-06,,Active
+EMPLOY0021,EMP8098,Academics ,Teacher,2021-09-06,,Active
+EMPLOY0005,EMP1916,Academics ,Teacher,2022-01-10,,Active
+EMPLOY0012,EMP2395,Academics ,Teacher,2022-01-10,,active
+EMPLOY0029,EMP5316,Academics , teacher ,2022-01-10,,Active
+EMPLOY0020,EMP7751,Academics , teacher ,2022-01-10,,Active
+EMPLOY0026,EMP1162,Academics ,Teacher,05/09/2022,,Active
+EMPLOY0014,EMP3207,Academics ,Teacher,2022-09-05,,Active
+EMPLOY0009,EMP4665,Academics ,Teacher,2022-09-05,2025-08-29,Left
+EMPLOY0017,EMP7277,Academics ,Teacher,2022-09-05,,Active
+EMPLOY0032,EMP8261,academics ,Teacher,2022-09-05,,Active
+EMPLOY0007,EMP9548,Academics , teacher ,2022-09-05,,Active
+EMPLOY0023,EMP9709,Academics ,Teacher,2022-09-05,29/08/2025,Left
+EMPLOY0034,EMP2776,Academics ,Teacher,2023-09-04,,Active
+EMPLOY0033,EMP7298,Academics ,Teacher,2023-09-04,,Active
+EMPLOY0036,EMP3077,HR,HR Officer,2023-09-11,2025-08-29,Left
+EMPLOY0035,EMP8002,HR,HR Officer,2023-09-11,,active
+EMPLOY0037,EMP3183,HR,HR Officer,2023-09-18,,Active
+EMPLOY0038, EMP6783,HR,HR Officer,2024-09-09,,Active
+EMPLOY0047,EMP1925,Administration,Receptionist,2024-09-09,2025-08-29,Left
+EMPLOY0043,EMP3367,Administration,Receptionist,2024-09-09,,Active
+EMPLOY0039,EMP3425,Finance,Cashier,2024-09-09,,Active
+EMPLOY0040,EMP3018,Finance,Cashier,2024-09-16,2025-01-10,Left
+EMPLOY0044,EMP9164,Administration,Receptionist,2025-01-13,2025-06-27,Left
+EMPLOY0041,EMP2871,finance,Cashier,2025-09-08,,Active
+EMPLOY0045 ,EMP3291,Administration,Receptionist,2025-09-08,,Active
+EMPLOY0046,EMP5032,Administration,Receptionist,2025-09-08,,Active
+EMPLOY0048,EMP5839,Administration,Receptionist,2025-09-08,,Active
+EMPLOY0042,EMP7932,Finance,Cashier,2025-09-08,,Active
