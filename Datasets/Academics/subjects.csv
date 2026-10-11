@@ -1,0 +1,28 @@
+subject_id,subject_name,subject_category
+ENG,English Language,General
+MTH,Mathematics,General
+CIV,Civic Education,General
+PHY,Physics,Science
+CHEM,Chemistry,Science
+BIO,Biology,Science
+FMath,Further Mathematics,Science
+AGR,Agricultural Science,Science
+GEO,Geography,Science
+TD,Technical Drawing,Science
+LIT,Literature-in-English,Arts
+GOV,Government,Arts
+CRS,Christian Religious Studies,Arts
+IRS,Islamic Studies,Arts
+YOR,Yoruba,Arts
+IGB,Igbo,Arts
+HAU,Hausa,Arts
+HIS,History,Arts
+VA,Visual Arts,Arts
+FRE,French,Arts
+ECO,Economics,Commercial
+FA,Financial Accounting,Commercial
+COM,Commerce,Commercial
+OP,Office Practice,Commercial
+MKT,Marketing,Commercial
+BK,Bookkeeping,Commercial
+INS,Insurance,Commercial

@@ -1,0 +1,49 @@
+exam_id,class,academic_year,term,exam_type,exam_name
+SS1231CA,ss1,2023/2024,1st,CA, First Term CA 
+SS1231EX,SS1,2023/2024,1st,EX,First Term Examination
+SS2231CA,ss2,2023/2024,1st,CA,First Term CA
+SS2231EX,SS2,2023/2024,1st,EX,First Term Examination
+SS3231CA,SS3,2023/2024,1st,CA,First Term CA
+SS3231EX,SS3,2023/2024,1st,EX,First Term Examination
+SS1232CA,SS1,2023/2024,2nd,ca,Second Term CA
+SS1232EX,SS1,2023/2024,2nd,EX,Second Term Examination
+SS2232CA,SS2, 2023/2024 ,2nd,CA,Second Term CA
+SS2232EX,SS2,2023/2024,2nd,EX,Second Term Examination
+SS3232CA,SS3,2023/2024,2nd,ca,Second Term CA
+SS3232EX,SS3,2023/2024,2nd,EX,Second Term Examination
+SS1233CA,SS1,2023/2024,3rd,CA,Third Term CA
+SS1233EX,SS1,2023/2024,3rd,EX,Third Term Examination
+SS2233CA,SS2,2023/2024,3rd,CA,Third Term CA
+SS2233EX,SS2,2023/2024,3rd,EX,Third Term Examination
+SS1241CA,SS1,2024/2025,1st,CA,First Term CA
+SS1241EX,SS1,2024/2025,1st,EX,First Term Examination
+SS2241CA,SS2,2024/2025,1st,ca,First Term CA
+ SS2241EX ,ss2,2024/2025,1st,EX,First Term Examination
+SS3241CA,SS3,2024/2025,1st,CA,First Term CA
+SS3241EX,SS3,2024/2025,1st,EX,First Term Examination
+SS1242CA,SS1, 2024/2025 ,2nd,CA,Second Term CA
+SS1242EX,SS1,2024/2025,2nd,EX, Second Term Examination 
+SS2242CA,SS2, 2024/2025 ,2nd,CA,Second Term CA
+SS2242EX,SS2,2024/2025,2nd,EX,Second Term Examination
+SS3242CA,SS3,2024/2025,2nd,CA,Second Term CA
+SS3242EX,SS3,2024/2025,2nd,EX,Second Term Examination
+SS1243CA,SS1,2024/2025,3rd,CA,Third Term CA
+SS1243EX,SS1,2024/2025,3rd,EX,Third Term Examination
+SS2243CA,SS2,2024/2025,3rd,CA,Third Term CA
+SS2243EX,SS2,2024/2025,3rd,EX,Third Term Examination
+SS1251CA,SS1,2025/2026,1st,CA,First Term CA
+SS1251EX,SS1,2025/2026,1st,EX,First Term Examination
+SS2251CA,SS2,2025/2026,1st,CA,First Term CA
+SS2251EX,SS2,2025/2026,1st,EX,First Term Examination
+SS3251CA,SS3,2025/2026,1st,CA,First Term CA
+SS3251EX,SS3,2025/2026,1st,EX,First Term Examination
+SS1252CA,SS1,2025/2026, 2nd ,CA,Second Term CA
+SS1252EX,SS1,2025/2026, 2nd ,EX,Second Term Examination
+ SS2252CA ,SS2,2025/2026,2nd,CA,Second Term CA
+SS2252EX,SS2,2025/2026,2nd,EX,Second Term Examination
+ SS3252CA ,SS3,2025/2026,2nd,CA,Second Term CA
+SS3252EX,SS3,2025/2026,2nd,EX,Second Term Examination
+SS1253CA,SS1,2025/2026,3rd,CA,Third Term CA
+SS1253EX,SS1,2025/2026,3rd,EX, Third Term Examination 
+SS2253CA,SS2,2025/2026,3rd,CA,Third Term CA
+SS2253EX,SS2,2025/2026, 3rd ,EX,Third Term Examination
