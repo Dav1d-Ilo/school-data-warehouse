@@ -1,5 +1,20 @@
+/*
+=============================================================
+Create Silver Layer Tables
+=============================================================
+Script Purpose:
+    This script creates the Silver layer tables for the School
+    Data Warehouse. The Silver layer stores cleaned and
+    standardized data transformed from the Bronze layer.
+
+    Existing Silver tables are dropped and recreated.
+=============================================================
+*/
+
 IF OBJECT_ID ('Silver.academics_enrollment' , 'U') IS NOT NULL
    DROP TABLE Silver.academics_enrollment;
+GO
+   
 CREATE TABLE Silver.academics_enrollment(
 enrollment_id VARCHAR(25),
 student_id VARCHAR(25),
@@ -12,9 +27,12 @@ exit_year VARCHAR(12),
 exit_term VARCHAR(5),
 enrollment_status VARCHAR(15)
 );
-
+GO
+   
 IF OBJECT_ID ('Silver.academics_student_info' , 'U') IS NOT NULL
    DROP TABLE Silver.academics_student_info;
+GO
+   
 CREATE TABLE Silver.academics_student_info(
 student_id VARCHAR(25),
 first_name NVARCHAR(30),
@@ -25,17 +43,23 @@ guardian_name NVARCHAR(30),
 guardian_phone VARCHAR(20),
 home_address NVARCHAR(50)
 );
-
+GO
+   
 IF OBJECT_ID ('Silver.academics_subjects' , 'U') IS NOT NULL
    DROP TABLE Silver.academics_subjects;
+GO
+   
 CREATE TABLE Silver.academics_subjects(
 subject_id VARCHAR(15),
 subject_name VARCHAR(50),
 subject_category VARCHAR(15)
 );
-
+GO
+   
 IF OBJECT_ID ('Silver.academics_exam' , 'U') IS NOT NULL
    DROP TABLE Silver.academics_exam;
+GO
+   
 CREATE TABLE Silver.academics_exam(
 exam_id VARCHAR(15),
 class VARCHAR(15),
@@ -44,9 +68,12 @@ term VARCHAR(10),
 exam_type VARCHAR(5),
 exam_name VARCHAR(30),
 );
-
+GO
+   
 IF OBJECT_ID ('Silver.academics_exam_results' , 'U') IS NOT NULL
    DROP TABLE Silver.academics_exam_results;
+GO
+   
 CREATE TABLE Silver.academics_exam_results(
 result_id VARCHAR(15),
 student_id VARCHAR(15),
@@ -54,9 +81,12 @@ exam_id VARCHAR(15),
 subject_id VARCHAR(15),
 score INT
 );
-
+GO
+   
 IF OBJECT_ID ('Silver.hr_employee' , 'U') IS NOT NULL
    DROP TABLE Silver.hr_employee;
+GO
+   
 CREATE TABLE Silver.hr_employee(
 employee_id VARCHAR(15),
 first_name NVARCHAR(30),
@@ -67,9 +97,12 @@ phone VARCHAR(15),
 email VARCHAR(50),
 home_address NVARCHAR(50)
 );
-
+GO
+   
 IF OBJECT_ID ('Silver.hr_employment' , 'U') IS NOT NULL
    DROP TABLE Silver.hr_employment;
+GO
+   
 CREATE TABLE Silver.hr_employment(
 employment_id VARCHAR(15),
 employee_id VARCHAR(15),
@@ -79,9 +112,12 @@ employment_date DATE,
 end_date  DATE,
 employment_status VARCHAR(30)
 );
-
+GO
+   
 IF OBJECT_ID ('Silver.hr_teacher_assignment' , 'U') IS NOT NULL
    DROP TABLE Silver.hr_teacher_assignment;
+GO
+   
 CREATE TABLE Silver.hr_teacher_assignment(
 assignment_id VARCHAR(30),
 employee_id VARCHAR(30),
@@ -91,9 +127,12 @@ arm VARCHAR(3),
 academic_year VARCHAR(12),
 term VARCHAR(5)
 );
-
+GO
+   
 IF OBJECT_ID ('Silver.finance_fee' , 'U') IS NOT NULL
    DROP TABLE Silver.finance_fee;
+GO
+   
 CREATE TABLE Silver.finance_fee(
 fee_id VARCHAR(10),
 fee_name VARCHAR(25),
@@ -101,9 +140,12 @@ academic_year VARCHAR(12),
 term VARCHAR(15),
 amount INT
 );
-
+GO
+   
 IF OBJECT_ID ('Silver.finance_invoice' , 'U') IS NOT NULL
    DROP TABLE Silver.finance_invoice;
+GO
+   
 CREATE TABLE Silver.finance_invoice(
 invoice_id VARCHAR(25),
 student_id VARCHAR(25),
@@ -112,9 +154,12 @@ term VARCHAR(5),
 invoice_date DATE,
 total_amount INT
 );
-
+GO
+   
 IF OBJECT_ID ('Silver.finance_payment' , 'U') IS NOT NULL
    DROP TABLE Silver.finance_payment;
+GO
+   
 CREATE TABLE Silver.finance_payment(
 payment_id VARCHAR(25),
 invoice_id VARCHAR(25),
@@ -123,3 +168,4 @@ payment_date DATE,
 amount_paid INT,
 payment_mode VARCHAR(20)
 );
+GO
