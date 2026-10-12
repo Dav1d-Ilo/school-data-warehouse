@@ -20,7 +20,7 @@ Provides descriptive information about students and generates a surrogate key us
 
 | Column           | Data Type    | Description                                      |
 | ---------------- | ------------ | ------------------------------------------------ |
-| `student_key`    | BIGINT       | Surrogate key generated for each student record. |
+| `student_key`    | INT          | Surrogate key generated for each student record. |
 | `student_id`     | VARCHAR(25)  | Business identifier assigned to the student.     |
 | `first_name`     | NVARCHAR(30) | Student's first name.                            |
 | `last_name`      | NVARCHAR(30) | Student's last name.                             |
@@ -40,7 +40,7 @@ Provides employee information together with employment details for workforce ana
 
 | Column              | Data Type    | Description                                   |
 | ------------------- | ------------ | --------------------------------------------- |
-| `employee_key`      | BIGINT       | Surrogate key generated for the employee.     |
+| `employee_key`      | INT          | Surrogate key generated for the employee.     |
 | `employee_id`       | VARCHAR(15)  | Business identifier assigned to the employee. |
 | `first_name`        | NVARCHAR(30) | Employee's first name.                        |
 | `last_name`         | NVARCHAR(30) | Employee's last name.                         |
@@ -65,7 +65,7 @@ Provides information about subjects taught and examined within the school.
 
 | Column             | Data Type   | Description                                                      |
 | ------------------ | ----------- | ---------------------------------------------------------------- |
-| `subject_key`      | BIGINT      | Surrogate key generated for the subject.                         |
+| `subject_key`      | INT         | Surrogate key generated for the subject.                         |
 | `subject_id`       | VARCHAR(15) | Business identifier assigned to the subject.                     |
 | `subject_name`     | VARCHAR(50) | Name of the subject.                                             |
 | `subject_category` | VARCHAR(15) | Subject category, such as General, Science, Arts, or Commercial. |
@@ -80,7 +80,7 @@ Provides descriptive information about examinations conducted across classes, ac
 
 | Column          | Data Type   | Description                                      |
 | --------------- | ----------- | ------------------------------------------------ |
-| `exam_key`      | BIGINT      | Surrogate key generated for the examination.     |
+| `exam_key`      | INT         | Surrogate key generated for the examination.     |
 | `exam_id`       | VARCHAR(15) | Business identifier assigned to the examination. |
 | `class`         | VARCHAR(15) | Senior secondary class: SS1, SS2, or SS3.        |
 | `academic_year` | VARCHAR(12) | Academic year of the examination.                |
@@ -98,7 +98,7 @@ Provides information about school fees applicable to each academic year and term
 
 | Column          | Data Type   | Description                                               |
 | --------------- | ----------- | --------------------------------------------------------- |
-| `fee_key`       | BIGINT      | Surrogate key generated for the fee record.               |
+| `fee_key`       | INT         | Surrogate key generated for the fee record.               |
 | `fee_id`        | VARCHAR(10) | Business identifier assigned to the fee.                  |
 | `fee_name`      | VARCHAR(25) | Name of the fee, such as Tuition, Examination, or Sports. |
 | `academic_year` | VARCHAR(12) | Academic year in which the fee applies.                   |
@@ -118,7 +118,7 @@ Records student invoices issued for school fees and links each invoice to the co
 | Column          | Data Type   | Description                                              |
 | --------------- | ----------- | -------------------------------------------------------- |
 | `invoice_id`    | VARCHAR(25) | Business identifier assigned to the invoice.             |
-| `student_key`   | BIGINT      | Surrogate key linking the invoice to `dim_student_info`. |
+| `student_key`   | INT         | Surrogate key linking the invoice to `dim_student_info`. |
 | `academic_year` | VARCHAR(12) | Academic year associated with the invoice.               |
 | `term`          | VARCHAR(5)  | Academic term associated with the invoice.               |
 | `invoice_date`  | DATE        | Date the invoice was issued.                             |
@@ -136,7 +136,7 @@ Records payments made against student invoices and links each payment to the cor
 | -------------- | ----------- | -------------------------------------------------------- |
 | `payment_id`   | VARCHAR(25) | Business identifier assigned to the payment.             |
 | `invoice_id`   | VARCHAR(25) | Identifier of the invoice being paid.                    |
-| `student_key`  | BIGINT      | Surrogate key linking the payment to `dim_student_info`. |
+| `student_key`  | INT         | Surrogate key linking the payment to `dim_student_info`. |
 | `payment_date` | DATE        | Date the payment was made.                               |
 | `amount_paid`  | INT         | Amount paid in whole currency units.                     |
 | `payment_mode` | VARCHAR     | Method used to make the payment.                         |
@@ -154,8 +154,8 @@ Records teacher assignments to subjects, classes, and arms during specific acade
 | Column          | Data Type   | Description                                                                             |
 | --------------- | ----------- | --------------------------------------------------------------------------------------- |
 | `assignment_id` | VARCHAR(30) | Business identifier assigned to the teacher assignment.                                 |
-| `employee_key`  | BIGINT      | Surrogate key linking the assignment to `dim_employee`.                                 |
-| `subject_key`   | BIGINT      | Surrogate key linking the assignment to `dim_subjects`.                                 |
+| `employee_key`  | INT         | Surrogate key linking the assignment to `dim_employee`.                                 |
+| `subject_key`   | INT         | Surrogate key linking the assignment to `dim_subjects`.                                 |
 | `class`         | VARCHAR(10) | Senior secondary class assigned to the teacher.                                         |
 | `arm`           | VARCHAR(3)  | Class arm assigned to the teacher. `ALL` indicates the subject applies across all arms. |
 | `academic_year` | VARCHAR(12) | Academic year of the assignment.                                                        |
@@ -174,7 +174,7 @@ Records student enrollment within a class, arm, and academic period.
 | Column              | Data Type   | Description                                                 |
 | ------------------- | ----------- | ----------------------------------------------------------- |
 | `enrollment_id`     | VARCHAR(25) | Business identifier assigned to the enrollment record.      |
-| `student_key`       | BIGINT      | Surrogate key linking the enrollment to `dim_student_info`. |
+| `student_key`       | INT         | Surrogate key linking the enrollment to `dim_student_info`. |
 | `class`             | VARCHAR(6)  | Senior secondary class in which the student is enrolled.    |
 | `arm`               | VARCHAR(3)  | Class arm assigned to the student.                          |
 | `academic_year`     | VARCHAR(12) | Academic year of the enrollment.                            |
@@ -197,9 +197,9 @@ Records student examination results and connects each result to the student, exa
 | Column        | Data Type   | Description                                             |
 | ------------- | ----------- | ------------------------------------------------------- |
 | `result_id`   | VARCHAR(15) | Business identifier assigned to the examination result. |
-| `student_key` | BIGINT      | Surrogate key linking the result to `dim_student_info`. |
-| `exam_key`    | BIGINT      | Surrogate key linking the result to `dim_exam`.         |
-| `subject_key` | BIGINT      | Surrogate key linking the result to `dim_subjects`.     |
+| `student_key` | INT         | Surrogate key linking the result to `dim_student_info`. |
+| `exam_key`    | INT         | Surrogate key linking the result to `dim_exam`.         |
+| `subject_key` | INT         | Surrogate key linking the result to `dim_subjects`.     |
 | `score`       | INT         | Student's score for the subject in the examination.     |
 
 ---
