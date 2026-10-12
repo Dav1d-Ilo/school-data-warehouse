@@ -1,3 +1,16 @@
+/*
+=============================================================
+Load Silver Layer
+=============================================================
+Script Purpose:
+    This script loads the Silver layer tables by transforming
+    and cleaning data from the Bronze layer. It applies data
+    cleaning, standardization, and quality checks to prepare
+    the data for analytical use in the Gold layer.
+
+    Existing Silver data is truncated before reloading.
+=============================================================
+*/
 CREATE OR ALTER PROCEDURE Silver.load_silver AS
 BEGIN
     DECLARE @start_time DATETIME2;
