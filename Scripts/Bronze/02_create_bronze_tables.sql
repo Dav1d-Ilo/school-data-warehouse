@@ -12,6 +12,8 @@ Script Purpose:
 */
 IF OBJECT_ID ('Bronze.academics_enrollment' , 'U') IS NOT NULL
    DROP TABLE Bronze.academics_enrollment;
+GO
+    
 CREATE TABLE Bronze.academics_enrollment(
 enrollment_id VARCHAR(25),
 student_id VARCHAR(25),
@@ -24,9 +26,12 @@ exit_year VARCHAR(12),
 exit_term VARCHAR(5),
 enrollment_status VARCHAR(15)
 );
-
+GO
+    
 IF OBJECT_ID ('Bronze.academics_student_info' , 'U') IS NOT NULL
    DROP TABLE Bronze.academics_student_info;
+GO
+    
 CREATE TABLE Bronze.academics_student_info(
 student_id VARCHAR(25),
 first_name NVARCHAR(30),
@@ -37,17 +42,23 @@ guardian_name NVARCHAR(30),
 guardian_phone VARCHAR(20),
 home_address NVARCHAR(50)
 );
-
+GO
+    
 IF OBJECT_ID ('Bronze.academics_subjects' , 'U') IS NOT NULL
    DROP TABLE Bronze.academics_subjects;
+GO
+    
 CREATE TABLE Bronze.academics_subjects(
 subject_id VARCHAR(15),
 subject_name VARCHAR(50),
 subject_category VARCHAR(15)
 );
-
+GO
+    
 IF OBJECT_ID ('Bronze.academics_exam' , 'U') IS NOT NULL
    DROP TABLE Bronze.academics_exam;
+GO
+    
 CREATE TABLE Bronze.academics_exam(
 exam_id VARCHAR(15),
 class VARCHAR(15),
@@ -56,9 +67,12 @@ term VARCHAR(10),
 exam_type VARCHAR(5),
 exam_name VARCHAR(30),
 );
-
+GO
+    
 IF OBJECT_ID ('Bronze.academics_exam_results' , 'U') IS NOT NULL
    DROP TABLE Bronze.academics_exam_results;
+GO
+    
 CREATE TABLE Bronze.academics_exam_results(
 result_id VARCHAR(15),
 student_id VARCHAR(15),
@@ -66,9 +80,12 @@ exam_id VARCHAR(15),
 subject_id VARCHAR(15),
 score INT
 );
-
+GO
+    
 IF OBJECT_ID ('Bronze.hr_employee' , 'U') IS NOT NULL
    DROP TABLE Bronze.hr_employee;
+GO
+    
 CREATE TABLE Bronze.hr_employee(
 employee_id VARCHAR(15),
 first_name NVARCHAR(30),
@@ -79,9 +96,12 @@ phone VARCHAR(15),
 email VARCHAR(50),
 home_adress NVARCHAR(50)
 );
-
+GO
+    
 IF OBJECT_ID ('Bronze.hr_employment' , 'U') IS NOT NULL
    DROP TABLE Bronze.hr_employment;
+GO
+    
 CREATE TABLE Bronze.hr_employment(
 employment_id VARCHAR(15),
 employee_id VARCHAR(15),
@@ -91,9 +111,12 @@ employment_date VARCHAR(30),
 end_date  VARCHAR(30),
 employment_status VARCHAR(30)
 );
-
+GO
+    
 IF OBJECT_ID ('Bronze.hr_teacher_assignment' , 'U') IS NOT NULL
    DROP TABLE Bronze.hr_teacher_assignment;
+GO
+    
 CREATE TABLE Bronze.hr_teacher_assignment(
 assignment_id VARCHAR(30),
 employee_id VARCHAR(30),
@@ -103,9 +126,12 @@ arm VARCHAR(3),
 academic_year VARCHAR(12),
 term VARCHAR(5)
 );
-
+GO
+    
 IF OBJECT_ID ('Bronze.finance_fee' , 'U') IS NOT NULL
    DROP TABLE Bronze.finance_fee;
+GO
+    
 CREATE TABLE Bronze.finance_fee(
 fee_id VARCHAR(10),
 fee_name VARCHAR(25),
@@ -113,9 +139,12 @@ academic_year VARCHAR(12),
 term VARCHAR(15),
 amount INT
 );
-
+GO
+    
 IF OBJECT_ID ('Bronze.finance_invoice' , 'U') IS NOT NULL
    DROP TABLE Bronze.finance_invoice;
+GO
+    
 CREATE TABLE Bronze.finance_invoice(
 invoice_id VARCHAR(25),
 student_id VARCHAR(25),
@@ -124,9 +153,12 @@ term VARCHAR(5),
 invoice_date DATE,
 total_amount INT
 );
-
+GO
+    
 IF OBJECT_ID ('Bronze.finance_payment' , 'U') IS NOT NULL
    DROP TABLE Bronze.finance_payment;
+GO
+    
 CREATE TABLE Bronze.finance_payment(
 payment_id VARCHAR(25),
 invoice_id VARCHAR(25),
@@ -135,4 +167,4 @@ payment_date DATE,
 amount_paid INT,
 payment_mode VARCHAR(20)
 );
-
+GO
